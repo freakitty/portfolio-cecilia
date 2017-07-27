@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px){
+    .section{padding: 4em;}
+    .projet-texte p{column-count: 2;}
+}
+
+@media screen and (max-width: 1025px){
+    .navbar{width: 100%; right: -100%; opacity:.9;}
+    .navbar ul li{margin-left: 200px;}
+    .close{left: 93%;}
+    h1{font-size: 5em;}
+}
+
+@media screen and (max-width: 768px){
+    .navbar ul li{margin-left: 100px;}
+}
+
+@media screen and (max-width: 415px){
+    h1{font-size: 3em; left: 40px;}
+    h3{font-size: 2.5em;}
+    .navbar ul li{margin-left: 40px;}
+    .close{left: 88%;}
+    .burger-container{top: 35px; right: 40px;}
+}
+
+@media screen and (max-width: 375px){
+    h1{font-size: 2.4em;}
+    #scrollDown{left: 42%;}
+    .navbar ul li{margin-left: 30px;}
+    .section{padding: 3em;}
+    .grille{grid-gap: 20px;}
+    .close{left: 85%;} 
+}
+
+@media screen and (max-width: 320px){
+    h1{font-size: 2em;}
+    .section{padding: 2em;}
+    .grille{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+    .close{width: 30px;}
+    h4{font-size: 2.5em; margin: 70px 0 10px 40px;}
+    h5{font-size: 1em; line-height: 15px;}
+    .navbar ul{font-size: 1em;}
+    h2{font-size: 1.2em; margin-bottom: 10px;}
+    p{font-size: 0.7em;}
+    #about, #contact{width: 250px; top: 25%;}
+    textarea{height: 80px;}
+}
