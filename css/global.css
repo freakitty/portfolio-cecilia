@@ -1,45 +1,42 @@
 @font-face {
     font-family:'Roboto';
     font-weight: 700;
-    src: local ('../font/Roboto-Bold.ttf');
-    src: local ('../font/Roboto-Bold.woff');
+    src: url(../font/Roboto-Bold.ttf);
+    src: url(../font/Roboto-Bold.woff);
 }
 @font-face {
     font-family:'Roboto';
     font-weight: 500;
-    src: local ('../font/Roboto-Medium.ttf');
-    src: local ('../font/Roboto-Medium.woff');
+    src: url(../font/Roboto-Medium.ttf);
+    src: url(../font/Roboto-Medium.woff);
 }
 @font-face {
     font-family:'Roboto';
     font-weight: 300;
-    src: local ('../font/Roboto-light.ttf');
-    src: local ('../font/Roboto-ligth.woff');
+    src: url(../font/Roboto-light.ttf);
+    src: url(../font/Roboto-ligth.woff);
 }
 @font-face {
     font-family:'Roboto';
     font-weight: 200;
-    src: local ('../font/Roboto-Thin.ttf');
-    src: local ('../font/Roboto-Thin.woff');
+    src: url(../font/Roboto-Thin.ttf);
+    src: url(../font/Roboto-Thin.woff);
 }
 
 @font-face {
     font-family: 'Cabin Sketch';
     font-weight: 300;
-    src: local ('../font/CabinSketch-Regular.ttf');
-    src: local ('../font/CabinSketch-Regular.woff');
+    src: url(../font/CabinSketch-Regular.ttf);
+    src: url(../font/CabinSketch-Regular.woff);
 }
 
 @font-face {
     font-family: 'Cabin Sketch';
     font-weight: 700;
-    src: local ('../font/CabinSketch-Bold.ttf');
-    src: local ('../font/CabinSketch-Bold.woff');
+    src: url(../font/CabinSketch-Bold.ttf);
+    src: url(../font/CabinSketch-Bold.woff);
 }
 
-html.noscrolling {
-    overflow: hidden;
-}
 
 html, body{height: 100%; }
 body{font-family: 'Roboto'; overflow-x: hidden;}
@@ -381,13 +378,12 @@ textarea {
     bottom: 40px;
     left: 48%;
     cursor: pointer;
-    animation: scroll 2s infinite ease-in-out running;
+    animation: scroll 2s infinite ease-in-out ;
 }
 
 @keyframes scroll{
     0% 100%{transform: scale(1);}
-    50% {transform: scale(1.2);}
-    
+    50% {transform: scale(1.2);}   
 }
 
 /* ========================== PORTFOLIO ===========================*/
@@ -487,8 +483,8 @@ h3{
 .item:after{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     background-color: #00FFCA;
