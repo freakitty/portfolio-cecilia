@@ -29,6 +29,7 @@
     .section{padding: 3em;}
     .grille{grid-gap: 20px;}
     .close{left: 85%;} 
+    h4{font-size: 2.5em; margin: 70px 0 10px 40px;}
 }
 
 @media screen and (max-width: 320px){
@@ -36,7 +37,6 @@
     .section{padding: 2em;}
     .grille{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
     .close{width: 30px;}
-    h4{font-size: 2.5em; margin: 70px 0 10px 40px;}
     h5{font-size: 1em; line-height: 15px;}
     .navbar ul{font-size: 1em;}
     h2{font-size: 1.2em; margin-bottom: 10px;}

@@ -46,17 +46,17 @@ $(function () {
     
     /* ==================== CLOSE =================== */
     
-    $(".close").click(function () {
+     $(".close").click(function () {
         $(".hidden").fadeOut('slow', function () {
             $(".hidden").css('display', 'none');
         });
-        $('html').css('overflow', 'scroll');
+        $('html').css('overflow-Y', 'scroll');
     });
     
     /* ==================== NO SCROLLING =================== */
     
     function noScrolling() {
-        $('html').css('overflow', 'hidden');
+        $('html').css('overflow-Y', 'hidden');
         $('.hidden').css('overflow', 'scroll');
     }
     
