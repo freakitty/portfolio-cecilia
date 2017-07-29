@@ -11,7 +11,7 @@ $(function () {
     });
     
      /* ==================== ABOUT & CONTACT MENU =================== */
-        
+    
     var mq = window.matchMedia("(max-width: 414px)");
     
     $("#about-button").click(function () {
@@ -54,6 +54,16 @@ $(function () {
         });
          
     }
+    
+    /* ======================== CONTACT MENU ======================= */
+    
+    $("#portfolio-button").click(function () {
+        $('html, body').animate({scrollTop: $('#portfolio').offset().top}, '200%');
+    });
+    
+    $("#scrollDown").click(function () {
+        $('html, body').animate({scrollTop: $('#portfolio').offset().top}, '200%');
+    });
     
     /* ========================== GALLERY ========================== */
     
