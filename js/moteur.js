@@ -10,43 +10,56 @@ $(function () {
         $('.navbar').toggleClass('open');
     });
     
-     /* ==================== ABOUT MENU =================== */
+     /* ==================== ABOUT & CONTACT MENU =================== */
         
+    var mq = window.matchMedia("(max-width: 414px)");
+    
     $("#about-button").click(function () {
         if ($('#about').offset().left > 0) {
-            TweenMax.to('#about', 0.3, {left: '20%'});
+            TweenMax.to('#about', 0.3, {left: '36%'});
             TweenMax.to('#contact', 0.3, {left: '100%'});
         } else {
             TweenMax.to('#about', 0.3, {left: '100%'});
         }
     });
     
-    /* ========================= CONTACT MENU ======================== */
-
     $("#contact-button").click(function () {
         if ($('#contact').offset().left > 0) {
-            TweenMax.to('#contact', 0.3, {left: '20%'});
+            TweenMax.to('#contact', 0.3, {left: '36%'});
             TweenMax.to('#about', 0.3, {left: '100%'});
         } else {
             TweenMax.to('#contact', 0.3, {left: '100%'});
         }
     });
     
-    /* ======================== CONTACT MENU ======================= */
     
-    $("#portfolio-button").click(function () {
-        $('html, body').animate({scrollTop: $('#portfolio').offset().top}, '200%');
-    });
+    if (mq.matches) {
+         
+        $("#about-button").click(function () {
+            if ($('#about').offset().left > 0) {
+                TweenMax.to('#about', 0.3, {left: '10%'});
+                TweenMax.to('#contact', 0.3, {left: '100%'});
+            } else {
+                TweenMax.to('#about', 0.3, {left: '100%'});
+            }
+        });
     
-    $("#scrollDown").click(function () {
-        $('html, body').animate({scrollTop: $('#portfolio').offset().top}, '200%');
-    });
+        $("#contact-button").click(function () {
+            if ($('#contact').offset().left > 0) {
+                TweenMax.to('#contact', 0.3, {left: '10%'});
+                TweenMax.to('#about', 0.3, {left: '100%'});
+            } else {
+                TweenMax.to('#contact', 0.3, {left: '100%'});
+            }
+        });
+         
+    }
     
     /* ========================== GALLERY ========================== */
     
     /* ==================== CLOSE =================== */
     
-     $(".close").click(function () {
+    $(".close").click(function () {
         $(".hidden").fadeOut('slow', function () {
             $(".hidden").css('display', 'none');
         });
