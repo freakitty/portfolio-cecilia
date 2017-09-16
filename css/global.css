@@ -614,6 +614,11 @@ h5{
     margin: 15px;
 }
 
+iframe{
+    margin: 15px auto;
+    max-width: 100%;
+}
+
 body .hidden span{
     height: 100%;
     width: 10px;
